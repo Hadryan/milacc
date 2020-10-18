@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MILACC</title>
+  </head>
+  <body>
+    <span id='test'></span>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
+      const data = '{{ data | safe }}';
+      const label = document.getElementById('test');
+      label.innerText = data;
+    </script>
+  </body>
+</html>
